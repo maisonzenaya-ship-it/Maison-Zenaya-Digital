@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maison Zenaya | Sites & Logos</title>
+
+<meta name="description"
+content="Maison Zenaya crée des sites internet à partir de 90 € et des logos à partir de 25 €. Marseille et partout en France.">
+
+<style>
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --black: #080808;
+  --black-2: #111111;
+  --black-3: #181818;
+  --gold: #c8a45d;
+  --gold-light: #e1c47c;
+  --white: #ffffff;
+  --cream: #f6f2e9;
+  --gray: #b7b7b7;
+  --dark-gray: #333333;
+  --border: rgba(200,164,93,.30);
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-main {
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.logo-slogan {
+  color: #aaa;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav a {
+  color: #ddd;
+  font-size: 13px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: var(--gold-light);
+}
+
+.nav-cta {
+  border: 1px solid var(--gold);
+  color: var(--gold) !important;
+  padding: 8px 13px;
+  border-radius: 4px;
+}
+
+.nav-cta:hover {
+  background: var(--gold);
+  color: #000 !important;
+}
+
+/* MENU MOBILE */
+
+.menu-button {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--gold);
+  padding: 7px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(200,164,93,.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(200,164,93,.06),
+      transparent 25%
+    ),
+    var(--black);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border: 1px solid rgba(200,164,93,.12);
+  border-radius: 50%;
+  right: -180px;
+  top: 100px;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  max-width: 850px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: clamp(42px, 7vw, 80px);
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero-text {
+  max-width: 650px;
+  color: var(--gray);
+  font-size: 17px;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 4px;
+  border: 1px solid var(--gold);
+  transition: .3s;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #080808;
+}
+
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+}
+
+.btn-outline:hover {
+  background: rgba(200,164,93,.10);
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+  padding: 85px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 45px;
+}
+
+.section-label {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  color: var(--gray);
+}
+
+/* =========================
+   PRICES
+========================= */
+
+.services {
+  background: var(--black-2);
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 22px;
+}
+
+.price-card {
+  position: relative;
+  background: var(--black-3);
+  border: 1px solid var(--border);
+  padding: 40px;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(200,164,93,.65);
+}
+
+.price-number {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.price-card h3 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: var(--gold-light);
+  font-family: Georgia, serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.price-card p {
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.price-card ul {
+  list-style: none;
+}
+
+.price-card li {
+  color: #ddd;
+  font-size: 14px;
+  margin: 9px 0;
+}
+
+.price-card li::before {
+  content: "—";
+  color: var(--gold);
+  margin-right: 10px;
+}
+
+/* =========================
+   METHOD
+========================= */
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.method-card {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.method-card span {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.method-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.method-card p {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+/* =========================
+   RENDEZ-VOUS
+========================= */
+
+.rdv {
+  background: var(--black-2);
+}
+
+.rdv-box {
+  max-width: 950px;
+  margin: auto;
+  padding: 55px;
+  background: var(--black-3);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  text-align: center;
+}
+
+.rdv-box h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px,5vw,50px);
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.rdv-box p {
+  max-width: 720px;
+  margin: auto;
+  color: var(--gray);
+}
+
+.rdv-options {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  margin: 35px 0;
+}
+
+.rdv-option {
+  border: 1px solid var(--border);
+  padding: 22px;
+  border-radius: 5px;
+}
+
+.rdv-option h3 {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.rdv-option p {
+  font-size: 13px;
+}
+
+.rdv-note {
+  color: #999;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+/* =========================
+   FORMULAIRE
+========================= */
+
+.contact {
+  background: var(--cream);
+  color: #080808;
+}
+
+.contact .section-heading p {
+  color: #555;
+}
+
+.form-box {
+  max-width: 950px;
+  margin: auto;
+  background: #fff;
+  padding: clamp(25px,5vw,55px);
+  border-radius: 7px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.12);
+}
+
+.form-title {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 25px;
+  margin: 30px 0 20px;
+}
+
+.form-title:first-child {
+  margin-top: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.full {
+  grid-column: 1/-1;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8d1c5;
+  border-radius: 4px;
+  background: #fff;
+  color: #111;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(200,164,93,.12);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* CHECKBOX */
+
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px;
+  background: #f7f5f0;
+  border: 1px solid #e3ddd2;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.check input {
+  width: auto;
+  accent-color: var(--gold);
+}
+
+.form-note {
+  margin-top: 20px;
+  color: #666;
+  font-size: 12px;
+}
+
+.submit {
+  width: 100%;
+  border: none;
+  margin-top: 25px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-bottom {
+  background: var(--black);
+  text-align: center;
+}
+
+.contact-bottom h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px,5vw,48px);
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.contact-bottom p {
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+.email {
+  color: var(--gold);
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #050505;
+  border-top: 1px solid var(--border);
+  padding: 45px 20px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-title {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+footer p,
+footer a {
+  color: #aaa;
+  font-size: 13px;
+  display: block;
+  margin: 6px 0;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+.copyright {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: #666;
+  font-size: 11px;
+}
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media (max-width:900px) {
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--black);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 9px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .method-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:600px) {
+
+  .header-inner {
+    padding: 13px 16px;
+  }
+
+  .logo-main {
+    font-size: 18px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-inner {
+    padding: 70px 18px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons .btn {
+    width: 100%;
+  }
+
+  section {
+    padding: 65px 17px;
+  }
+
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card {
+    padding: 28px;
+  }
+
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rdv-box {
+    padding: 35px 20px;
+  }
+
+  .rdv-options {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full {
+    grid-column: auto;
+  }
+
+  .check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box {
+    padding: 25px 18px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="header-inner">
+
+    <a href="#accueil" class="logo">
+
+      <span class="logo-main">
+        MAISON ZENAYA
+      </span>
+
+      <span class="logo-slogan">
+        L’élégance pour tous
+      </span>
+
+    </a>
+
+
+    <button
+      class="menu-button"
+      onclick="toggleMenu()"
+      aria-label="Menu">
+
+      ☰
+
+    </button>
+
+
+    <nav id="nav">
+
+      <a href="#accueil" onclick="closeMenu()">
+        Accueil
+      </a>
+
+      <a href="#services" onclick="closeMenu()">
+        Services
+      </a>
+
+      <a href="#methode" onclick="closeMenu()">
+        Méthode
+      </a>
+
+      <a href="#devis" onclick="closeMenu()">
+        Devis
+      </a>
+
+      <a href="#contact" onclick="closeMenu()">
+        Contact
+      </a>
+
+      <a
+        href="#devis"
+        class="nav-cta"
+        onclick="closeMenu()">
+
+        Devis
+
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="accueil">
+
+  <div class="hero-inner">
+
+    <div class="eyebrow">
+      Création digitale
+    </div>
+
+    <h1>
+      Votre image mérite
+      <span>un site à sa hauteur.</span>
+    </h1>
+
+    <p class="hero-text">
+      Maison Zenaya accompagne les professionnels dans la création
+      de sites internet modernes et élégants, ainsi que dans la
+      création de logos adaptés à leur identité.
+    </p>
+
+
+    <div class="buttons">
+
+      <a
+        href="#devis"
+        class="btn btn-gold">
+
+        Devis
+
+      </a>
+
+      <a
+        href="https://wa.me/33761620283"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-outline">
+
+        Rendez-vous
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="section-label">
+        Nos services
+      </div>
+
+      <h2>
+        Une image professionnelle,
+        pensée pour votre activité.
+      </h2>
+
+      <p>
+        Des créations modernes et accessibles pour donner à votre
+        entreprise une présence digitale cohérente.
+      </p>
+
+    </div>
+
+
+    <div class="price-grid">
+
+
+      <!-- SITE -->
+
+      <article class="price-card">
+
+        <div class="price-number">
+          01 — WEB
+        </div>
+
+        <h3>
+          Site internet
+        </h3>
+
+        <div class="price">
+          Dès 90 €
+        </div>
+
+        <p>
+          Un site moderne, responsive et adapté à votre activité.
+        </p>
+
+        <ul>
+
+          <li>Site vitrine</li>
+
+          <li>Restaurant</li>
+
+          <li>Commerce</li>
+
+          <li>Beauté & bien-être</li>
+
+          <li>Artisan</li>
+
+          <li>Entreprise</li>
+
+          <li>Portfolio</li>
+
+          <li>Contact & réseaux</li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- LOGO -->
+
+      <article class="price-card">
+
+        <div class="price-number">
+          02 — IDENTITÉ
+        </div>
+
+        <h3>
+          Logo
+        </h3>
+
+        <div class="price">
+          Dès 25 €
+        </div>
+
+        <p>
+          Une identité visuelle créée pour représenter votre activité.
+        </p>
+
+        <ul>
+
+          <li>Création personnalisée</li>
+
+          <li>Style adapté</li>
+
+          <li>Couleurs harmonieuses</li>
+
+          <li>Identité professionnelle</li>
+
+          <li>Utilisation digitale</li>
+
+        </ul>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     METHODE
+========================= -->
+
+<section id="methode">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="section-label">
+        Notre méthode
+      </div>
+
+      <h2>
+        Votre projet, étape par étape.
+      </h2>
+
+      <p>
+        Nous commençons par comprendre votre activité avant de
+        construire votre projet.
+      </p>
+
+    </div>
+
+
+    <div class="method-grid">
+
+      <div class="method-card">
+
+        <span>01</span>
+
+        <h3>
+          Votre besoin
+        </h3>
+
+        <p>
+          Vous nous présentez votre activité et votre projet.
+        </p>
+
+      </div>
+
+
+      <div class="method-card">
+
+        <span>02</span>
+
+        <h3>
+          Échange
+        </h3>
+
+        <p>
+          Nous échangeons sur vos attentes et vos objectifs.
+        </p>
+
+      </div>
+
+
+      <div class="method-card">
+
+        <span>03</span>
+
+        <h3>
+          Création
+        </h3>
+
+        <p>
+          Nous construisons votre site ou votre identité.
+        </p>
+
+      </div>
+
+
+      <div class="method-card">
+
+        <span>04</span>
+
+        <h3>
+          Livraison
+        </h3>
+
+        <p>
+          Votre projet est finalisé et prêt à être utilisé.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     RENDEZ-VOUS
+========================= -->
+
+<section class="rdv">
+
+  <div class="container">
+
+    <div class="rdv-box">
+
+      <div class="section-label">
+        Rendez-vous
+      </div>
+
+      <h2>
+        Parlons de votre projet.
+      </h2>
+
+      <p>
+        Les rendez-vous sont organisés via WhatsApp.
+        Vous pouvez choisir entre un rendez-vous dans vos locaux
+        ou une visioconférence.
+      </p>
+
+
+      <div class="rdv-options">
+
+
+        <div class="rdv-option">
+
+          <h3>
+            Dans vos locaux
+          </h3>
+
+          <p>
+            Le déplacement est offert lorsque le projet est réalisé
+            avec Maison Zenaya.
+          </p>
+
+          <p style="margin-top:10px;">
+            Si le projet n’est pas réalisé avec Maison Zenaya,
+            le déplacement est facturé.
+          </p>
+
+        </div>
+
+
+        <div class="rdv-option">
+
+          <h3>
+            Visioconférence
+          </h3>
+
+          <p>
+            La visioconférence est offerte lorsque le projet est
+            réalisé avec Maison Zenaya.
+          </p>
+
+          <p style="margin-top:10px;">
+            Si le projet n’est pas réalisé avec Maison Zenaya,
+            la visioconférence est facturée.
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+      <a
+        href="https://wa.me/33761620283"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-gold">
+
+        Rendez-vous
+
+      </a>
+
+
+      <div class="rdv-note">
+
+        Les conditions tarifaires du rendez-vous sont précisées
+        avant confirmation.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     DEVIS
+========================= -->
+
+<section class="contact" id="devis">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="section-label">
+        Votre projet
+      </div>
+
+      <h2>
+        Parlons de votre futur site.
+      </h2>
+
+      <p>
+        Remplissez le questionnaire. Votre demande sera préparée
+        dans un e-mail à destination de Maison Zenaya.
+      </p>
+
+    </div>
+
+
+    <div class="form-box">
+
+      <form id="quoteForm">
+
+
+        <!-- INFORMATIONS -->
+
+        <h3 class="form-title">
+          Vos informations
+        </h3>
+
+
+        <div class="form-grid">
+
+
+          <div class="field">
+
+            <label for="nom">
+              Nom et prénom *
+            </label>
+
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              required
+              placeholder="Votre nom">
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="entreprise">
+              Entreprise *
+            </label>
+
+            <input
+              type="text"
+              id="entreprise"
+              name="entreprise"
+              required
+              placeholder="Nom de l’entreprise">
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="email">
+              E-mail *
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="vous@exemple.fr">
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="telephone">
+              Téléphone
+            </label>
+
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="Votre numéro">
+
+          </div>
+
+
+        </div>
+
+
+        <!-- PROJET -->
+
+        <h3 class="form-title">
+          Votre projet
+        </h3>
+
+
+        <div class="form-grid">
+
+
+          <div class="field">
+
+            <label for="typeSite">
+              Type de site *
+            </label>
+
+            <select
+              id="typeSite"
+              name="typeSite"
+              required>
+
+              <option value="">
+                Choisir
+              </option>
+
+              <option>
+                Site vitrine
+              </option>
+
+              <option>
+                Restaurant
+              </option>
+
+              <option>
+                Commerce
+              </option>
+
+              <option>
+                Beauté / bien-être
+              </option>
+
+              <option>
+                Artisan
+              </option>
+
+              <option>
+                Entreprise
+              </option>
+
+              <option>
+                Portfolio
+              </option>
+
+              <option>
+                Association
+              </option>
+
+              <option>
+                E-commerce
+              </option>
+
+              <option>
+                Autre
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="activite">
+              Activité *
+            </label>
+
+            <input
+              type="text"
+              id="activite"
+              name="activite"
+              required
+              placeholder="Votre activité">
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="siteExistant">
+              Site existant ?
+            </label>
+
+            <select
+              id="siteExistant"
+              name="siteExistant">
+
+              <option value="">
+                Choisir
+              </option>
+
+              <option>
+                Oui
+              </option>
+
+              <option>
+                Non
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="urlSite">
+              Site actuel
+            </label>
+
+            <input
+              type="url"
+              id="urlSite"
+              name="urlSite"
+              placeholder="https://...">
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="domaine">
+              Nom de domaine ?
+            </label>
+
+            <select
+              id="domaine"
+              name="domaine">
+
+              <option value="">
+                Choisir
+              </option>
+
+              <option>
+                Oui
+              </option>
+
+              <option>
+                Non
+              </option>
+
+              <option>
+                Je ne sais pas
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="nomDomaine">
+              Nom du domaine
+            </label>
+
+            <input
+              type="text"
+              id="nomDomaine"
+              name="nomDomaine"
+              placeholder="exemple.fr">
+
+          </div>
+
+
+        </div>
+
+
+        <!-- IDENTITE -->
+
+        <h3 class="form-title">
+          Votre identité
+        </h3>
+
+
+        <div class="form-grid">
+
+
+          <div class="field">
+
+            <label for="logo">
+              Logo existant ?
+            </label>
+
+            <select
+              id="logo"
+              name="logo">
+
+              <option value="">
+                Choisir
+              </option>
+
+              <option>
+                Oui
+              </option>
+
+              <option>
+                Non
+              </option>
+
+              <option>
+                Je veux un logo
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="contenu">
+              Contenus disponibles ?
+            </label>
+
+            <select
+              id="contenu"
+              name="contenu">
+
+              <option value="">
+                Choisir
+              </option>
+
+              <option>
+                Oui
+              </option>
+
+              <option>
+                Une partie
+              </option>
+
+              <option>
+                Non
+              </option>
+
+            </select>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- FONCTIONNALITES -->
+
+        <h3 class="form-title">
+          Vos besoins
+        </h3>
+
+
+        <div class="check-grid">
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Présentation">
+
+            Présentation
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Galerie">
+
+            Galerie
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Contact">
+
+            Contact
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="WhatsApp">
+
+            WhatsApp
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Réservation">
+
+            Réservation
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Carte">
+
+            Carte
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Tarifs">
+
+            Tarifs
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Réseaux sociaux">
+
+            Réseaux sociaux
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Boutique">
+
+            Boutique
+
+          </label>
+
+
+          <label class="check">
+
+            <input
+              type="checkbox"
+              name="fonctionnalites"
+              value="Autre">
+
+            Autre
+
+          </label>
+
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <h3 class="form-title">
+          Votre projet
+        </h3>
+
+
+        <div class="field">
+
+          <label for="message">
+            Décrivez votre projet
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Expliquez-nous votre projet..."></textarea>
+
+        </div>
+
+
+        <!-- BUDGET -->
+
+        <div
+          class="form-grid"
+          style="margin-top:20px;">
+
+
+          <div class="field">
+
+            <label for="budget">
+              Budget
+            </label>
+
+            <select
+              id="budget"
+              name="budget">
+
+              <option value="">
+                Je ne sais pas
+              </option>
+
+              <option>
+                Moins de 150 €
+              </option>
+
+              <option>
+                150 € à 300 €
+              </option>
+
+              <option>
+                300 € à 500 €
+              </option>
+
+              <option>
+                Plus de 500 €
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="delai">
+              Délai
+            </label>
+
+            <select
+              id="delai"
+              name="delai">
+
+              <option value="">
+                Je ne sais pas
+              </option>
+
+              <option>
+                Dès que possible
+              </option>
+
+              <option>
+                Dans quelques semaines
+              </option>
+
+              <option>
+                Dans quelques mois
+              </option>
+
+              <option>
+                Plus tard
+              </option>
+
+            </select>
+
+          </div>
+
+
+        </div>
+
+
+        <p class="form-note">
+
+          * Champs obligatoires.
+          La demande de devis est envoyée uniquement par e-mail.
+
+        </p>
+
+
+        <button
+          type="submit"
+          class="btn btn-gold submit">
+
+          Envoyer
+
+        </button>
+
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact-bottom" id="contact">
+
+  <div class="container">
+
+    <div class="section-label">
+      Contact
+    </div>
+
+    <h2>
+      Un projet en tête ?
+    </h2>
+
+    <p>
+      Pour un devis, utilisez le formulaire.
+      Pour un rendez-vous, contactez-nous sur WhatsApp.
+    </p>
+
+
+    <div class="buttons"
+         style="justify-content:center;">
+
+      <a
+        href="#devis"
+        class="btn btn-gold">
+
+        Devis
+
+      </a>
+
+
+      <a
+        href="https://wa.me/33761620283"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-outline">
+
+        Rendez-vous
+
+      </a>
+
+    </div>
+
+
+    <a
+      href="mailto:maisonzenaya@gmail.com"
+      class="email">
+
+      maisonzenaya@gmail.com
+
+    </a>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div class="footer-main">
+
+
+      <div>
+
+        <div class="footer-title">
+          MAISON ZENAYA
+        </div>
+
+        <p>
+          L’élégance pour tous.
+        </p>
+
+        <p>
+          Création de sites internet & logos.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <div class="footer-title">
+          Contact
+        </div>
+
+        <a href="mailto:maisonzenaya@gmail.com">
+          maisonzenaya@gmail.com
+        </a>
+
+        <a href="tel:+33761620283">
+          07 61 62 02 83
+        </a>
+
+        <a
+          href="https://wa.me/33761620283"
+          target="_blank"
+          rel="noopener">
+
+          WhatsApp
+
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <div class="footer-title">
+          Services
+        </div>
+
+        <p>
+          Sites dès 90 €
+        </p>
+
+        <p>
+          Logos dès 25 €
+        </p>
+
+        <p>
+          Marseille & France
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Maison Zenaya — Tous droits réservés.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+/* =========================
+   MENU MOBILE
+========================= */
+
+function toggleMenu() {
+
+  document
+    .getElementById("nav")
+    .classList.toggle("active");
+
+}
+
+
+function closeMenu() {
+
+  document
+    .getElementById("nav")
+    .classList.remove("active");
+
+}
+
+
+/* =========================
+   FORMULAIRE
+========================= */
+
+document
+  .getElementById("quoteForm")
+  .addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    const nom =
+      document.getElementById("nom").value;
+
+    const entreprise =
+      document.getElementById("entreprise").value;
+
+    const email =
+      document.getElementById("email").value;
+
+    const telephone =
+      document.getElementById("telephone").value;
+
+    const typeSite =
+      document.getElementById("typeSite").value;
+
+    const activite =
+      document.getElementById("activite").value;
+
+    const siteExistant =
+      document.getElementById("siteExistant").value;
+
+    const urlSite =
+      document.getElementById("urlSite").value;
+
+    const domaine =
+      document.getElementById("domaine").value;
+
+    const nomDomaine =
+      document.getElementById("nomDomaine").value;
+
+    const logo =
+      document.getElementById("logo").value;
+
+    const contenu =
+      document.getElementById("contenu").value;
+
+    const message =
+      document.getElementById("message").value;
+
+    const budget =
+      document.getElementById("budget").value;
+
+    const delai =
+      document.getElementById("delai").value;
+
+
+    /* FONCTIONNALITÉS */
+
+    const fonctionnalites =
+      Array.from(
+        document.querySelectorAll(
+          'input[name="fonctionnalites"]:checked'
+        )
+      )
+      .map(function(item) {
+
+        return item.value;
+
+      })
+      .join(", ");
+
+
+    /* MAIL */
+
+    const sujet =
+      "Demande de devis - " + entreprise;
+
+
+    const corps =
+
+`Bonjour Maison Zenaya,
+
+Je souhaite obtenir un devis.
+
+MES INFORMATIONS
+
+Nom : ${nom}
+Entreprise : ${entreprise}
+E-mail : ${email}
+Téléphone : ${telephone}
+
+MON PROJET
+
+Type de site : ${typeSite}
+Activité : ${activite}
+
+Site existant : ${siteExistant}
+Site actuel : ${urlSite}
+
+Nom de domaine : ${domaine}
+Domaine : ${nomDomaine}
+
+Logo : ${logo}
+Contenus : ${contenu}
+
+FONCTIONNALITÉS
+
+${fonctionnalites || "Non précisé"}
+
+DESCRIPTION
+
+${message || "Non précisé"}
+
+BUDGET
+
+${budget}
+
+DÉLAI
+
+${delai}
+
+Merci.
+
+${nom}`;
+
+
+    const mailto =
+      "mailto:maisonzenaya@gmail.com" +
+      "?subject=" +
+      encodeURIComponent(sujet) +
+      "&body=" +
+      encodeURIComponent(corps);
+
+
+    window.location.href = mailto;
+
+  });
+
+</script>
+
+
+</body>
+</html>
